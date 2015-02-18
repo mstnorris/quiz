@@ -12,6 +12,9 @@
 */
 
 Route::get('/', 'PagesController@index');
+Route::get('q', function () {
+    return view('quiz.question');
+});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
